@@ -1,69 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>spotify clone</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        .header-section {
-            background-color: black;
-            /* padding: 10px; */
-            padding: 10px 0px;
+      .header-section {
+        background-color: black;
+        /* padding: 10px; */
+        padding: 12px 0px;
+      }
 
-        }
+      .nav-bar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
 
-        .nav-bar {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+      .brand_logo {
+        padding-left: 16px;
+      }
+      .list {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+      }
 
-        .list {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            
-        }
-
-        a{
-            color: white;
-            margin: 30px;
-            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 19x;
-            font-weight:bold;
-            text-decoration: none;
-        }
-        a:hover{
-                
-        }
+      a {
+        color: white;
+        margin: 18px;
+        /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 19x;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+      }
+      a:hover {
+        color: rgb(35, 180, 35);
+      }
+      .bar:hover {
+        color: white;
+        cursor: default;
+      }
+      /* Hero section */
+      .model {
+        width: 1921px;
+        height: 503px;
+      }
+      
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header-section">
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="Spotify_logo_with_text.svg.png" alt="logo" width="130">
-            </div>
-            <ul class="list">
-                <li><a href="#">Premium</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Sign up</a></li>
-                <li><a href="#">Log in</a></li>
-            </ul>
-        </nav>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img
+            src="Spotify_logo_with_text.svg.png"
+            alt="logo"
+            width="130"
+            class="brand_logo"
+          />
+        </div>
+        <ul class="list">
+          <li><a href="#">Premium</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#" class="bar">|</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+      </nav>
     </header>
-</body>
-
+    <!-- Hero section  -->
+    <section>
+      <div class="hero-sec">
+        <img
+          src="https://www-growth.scdn.co/static/download/renaissance/banner.jpg"
+          alt="model_img"
+          class="model"
+        />
+        <h1>Download Spotify</h1>
+      </div>
+    </section>
+  </body>
 </html>
